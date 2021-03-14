@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Google</title>
+  
+
+    <style>
+
+      body{
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      
+      }
+  
+      nav ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        justify-content: flex-end;
+        align-items: center;
+      
+      }
+      nav button /*sign in*/ {
+        padding: 10px 22px;
+        border: none;
+        border-radius: 4px;
+        background-color: dodgerblue;
+        color: white;
+      }
+
+      nav button:hover {
+        background-color: rgba(30, 143, 255, 0.842);
+      }
+      
+      nav button:focus {
+        outline: none;
+        background-color: rgba(30, 143, 255, 0.685);
+      }
+    
+      nav a {
+        font-size: 13px;
+        text-decoration-line: none;
+        color: black;
+        padding-right: 15px;
+      }
+      nav a:hover {
+        text-decoration-line: underline;
+      }
+
+      #dots {
+        height: 16px;
+        width: 16px; 
+        margin-left: 10px;
+        padding: 10px;
+       
+      
+      }
+      #dots:hover {
+        background-color: rgb(199, 197, 197);
+        border-radius: 50%;
+      }
+
+      main {
+        display: flex;
+        flex-direction: column;
+        
+        
+      }
+      main div {
+        margin: auto;
+      }
+      main img {
+        padding: 20px;
+        margin-top: 30%;
+      }
+
+      #searchbox {
+        padding: 12px 50px 12px 50px;
+        border-radius: 25px;
+        border: 1px solid #d6d6d6;
+        font-size: 16px;
+        width: 450px;
+      }
+      
+      #searchbox:hover{
+        border: 1px solid white;
+        box-shadow: 0px 1px 5px 1px rgb(207, 206, 206);
+      }
+      
+      #searchbox:focus {
+        border: 1px solid white;
+        box-shadow: 0px 1px 5px 1px rgb(207, 206, 206);
+        outline: none;
+      }
+
+      .searchButton {
+        background-color: rgb(247, 247, 247);
+        padding: 10px 20px;
+        margin: 25px;
+        border: 1px solid white;
+        border-radius: 3px;
+      }
+      .searchButton:hover {
+        border: 1px solid rgb(207, 206, 206);
+      }
+
+      .searchButton:focus {
+        border: 1px solid dodgerblue;
+        border-radius: 3px;
+        outline: none;
+        
+      }
+       
+      footer {
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        justify-content: space-between;
+        bottom: 0;
+        width: 99%;
+        height: 60px;
+        background-color: rgb(243, 243, 243);
+        
+      }
+      .footerleft {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+      }
+      .footerright {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+      }
+      footer ul li{
+        padding-right: 30px;
+      }
+      footer a {
+        font-size: 13px;
+        text-decoration-line: none;
+        color: rgb(99, 99, 99);
+                
+      }
+
+      footer a:hover {
+        text-decoration-line: underline;
+      }
+      @media screen and (max-width: 760px) {
+      #searchbox {
+        width: 350px;
+      } 
+      footer {
+        display: flex;
+        flex-direction: column;
+        height: 100px;
+      }
+      footer ul {
+        justify-content: center;
+      }
+      }
+
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#">Gmail</a></li>
+        <li><a href="#">Images</a></li>
+        <li><a href="#" ><img id="dots" src="https://upload.wikimedia.org/wikipedia/commons/c/c2/3x3dot-grey.svg" alt=""></a></li>
+        <button>Sign in</button>
+      </ul>
+    </nav>
+
+
+    <main>
+      <div>
+        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="">
+      </div>
+
+      <div>
+        <input type="text" name="box" id="searchbox" autofocus> 
+      </div>
+
+      <div>
+        <button class="searchButton">Google Search</button>
+        <button class="searchButton">I'm Feeling Lucky</button>
+      </div>
+    </main>
+    
+    <footer>
+      <ul class="footerleft">
+        <li><a id="footerlink1" href="#">About</a></li>
+        <li><a id="footerlink2" href="#">Advertising</a></li>
+        <li><a id="footerlink3" href="#">Business</a></li>
+        <li><a id="footerlink4" href="#">How Search works</a></li>
+      </ul>
+      <ul class="footerright">
+        <li><a id="footerlink5" href="#">Privacy</a></li>
+        <li><a id="footerlink6" href="#">Terms</a></li>
+        <li><a id="footerlink7" href="#">Settings</a></li>
+      </ul>
+    </footer>
+
+  </body>
+</html>
